@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(https://1.bp.blogspot.com/-oqU6Faaufsc/YRmw18QtSEI/AAAAAAAAwv8/jpiZV-Ti7_wSCSr2dXMe9XSU1QD7F5LEwCLcBGAsYHQ/s16000/the%2Bwalking%2Bdead%2Bs11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nomes{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.nomes ul li{
+  padding: 10px;
+  list-style: none;
+}
+.box{
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 600px;
+  height: auto;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  border-radius: 15px;    
+  
+}
+.cadastro{
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  background-position: 100%;   
+  border-radius: 15px 15px 0px 0px;
+  transition: 1s;
+}
+.cadastro:hover{
+  background-color: darkseagreen;
+  color: lightskyblue;
+}
+
+.nome, .cpf,.endereco, .complemento, .telefone, .email, .sexo, .nascimento, .idade, .cidTwd, .salvar, .voltar, .enviar{
+  font-weight: 700;
+  height: 30px;
+  margin: 15px;
+} 
+.ddd{
+  width: 40px;
+}
+.melhor-temporada label{
+  margin-left: 20px;
+}
+.melhor-temporada li{
+  list-style: none;    
+  transition: 1s;
+  cursor: pointer;
+}
+.melhor-temporada li:hover{
+  color: red;
+}
+.melhor-temporada li input{
+  position: relative;
+  top: 6px;
+}
+input{
+  margin-left: 10px;
+  height: 25px;
+  transition: 1s;   
+  border-radius: 8px;
+}
+input:hover{
+  background-color: rgb(219, 218, 218)
+}
+label{
+  transition: 1s;
+  
+}
+label:hover{
+  color: rgb(241, 202, 202);
+  
+}
+.sexo input{
+  margin-left: 15px;
+}
+.idade input{
+  margin-left: 15px;
+}
+.botao{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+span{
+  font-size: 13px;
+}
+
+.voltar{
+  text-align: center;
+  position: relative;
+  left: 100px;
+  transition: 1s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.voltar input:hover{
+  background-color: red;
+  border-color: darkorange;
+}
+.enviar{
+  text-align: center;
+  position: relative;
+  left: 200px;
+  transition: 1s;
+  transform: scale(1.2);
+  cursor: pointer;
+}    
+.enviar input:hover{
+  color: white; 
+  background-color: green;
+  border-color: lightskyblue;
+}
+
+@media screen and(max-width: 768px) {
+  body{
+  width: 100%;
+  }
+}
+@media screen and(max-width: 600px) {
+  body{
+  width: 100%;
+  }
+}

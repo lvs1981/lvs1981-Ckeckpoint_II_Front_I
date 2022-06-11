@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/animacao.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="nomes">
+        <ul>
+            <li>Luiz Vagner</li>
+            <li>Daniele Mendes</li>
+            <li>Emanuel Nogueira</li>
+        </ul>
+    </div>
+    <div class="box"> 
+        <div class="cadastro">
+        <h2>CADASTRO</h2>    
+        </div>
+        <form action="/mensagem" method="post">            
+            <div class="nome">
+                <label for="nome-completo">
+                    Nome Completo
+                </label><!--Sempre colocar um label para indicar o que significa cada campo -->
+                <input type="text" name = "nome-completo" id="nome-completo" placeholder="Nome" required><!--Boas práticas sempre usar um id com o mesmo valor do name-->
+            </div>  
+            <div class="endereco">
+                <label for="endereco">
+                    Endereço
+                </label>
+                <input type="text" name="endereco" id="endereco" placeholder="Logradouro" required>
+            </div>
+            <div class="complemento">
+                <label for="complemento">
+                    Complemento
+                </label>
+                <input type="text" name="complemento" id="complemento" placeholder="Casa, Apto" required>
+            </div>
+            <div class="telefone">
+                <label for="telefone">
+                    Telefone com DDD
+                </label>
+                <input class="ddd" type="tel" name="ddd" id="ddd" maxlength="2" placeholder="DDD" required>
+                <input type="tel" name="telefone" id="telefone" maxlength="9" placeholder="012345789" required>
+            </div>
+            <div class="email">
+                <label for="email">
+                    E-mail
+                </label>
+                <input type="email" name="email" id="email" required placeholder="eu@exemplo.com.br" >
+            </div>
+            <div class="sexo">
+                <label for="sexo">
+                    Sexo
+                </label>
+                <input type="radio" name="sexo" id="sexo"required>
+                <label for="m">
+                    Masculino
+                </label>
+                <input type="radio" name="sexo" id="sexo"required>
+                <label for="f">
+                    Feminino
+                </label>
+            </div>
+            <div class="nascimento">
+                <label for="dataNasc">
+                    Data de Nascimento
+                </label>
+               <input type="date" name="dataNasc" id="dataNasc" min="1900-01-01" max="2021-11-26" required>
+            </div>
+            <div class="idade">
+                <label for="idade">
+                    Maior de Idade?
+                </label>
+                <input type="radio" name="idade" id="idade" required>
+                <label for="m">
+                     Sim
+                </label>
+                <input type="radio" name="idade" id="idade" required>
+                <label for="f">
+                    Não
+                </label>
+            </div>
+            <div class="melhor-temporada">
+                <label for="temporada">
+                    Qual foi a melhor temporada de TWD na sua opinião?
+                </label>
+                    <ul>
+                    <li><input type="checkbox">&nbsp&nbsp6ª Temporada</li>
+                    <li><input type="checkbox">&nbsp&nbsp7ª Temporada</li>
+                    <li><input type="checkbox">&nbsp&nbsp8ª Temporada</li>
+                    <li><input type="checkbox">&nbsp&nbsp9ª Temporada</li>
+                    <li><input type="checkbox">&nbsp&nbsp10ª Temporada</li>
+                    <li><input type="checkbox">&nbsp&nbsp11ª Temporada</li>
+                    <li><input type="checkbox">&nbsp&nbspAnteriores</li>
+                    </ul>
+            </div>
+            <div class="cidTwd">
+                <label for="cidadeDWD">Qual Cidade você mais curte?</label>
+                <select name="cidadeDWD" id="cidadeDWD" required>
+                    <option value="0" selected disabled>Por favor escolha uma opção </option><!--Selected deixa a opção selecionada e disable desabilita e opção-->
+                    <option value="eAlexandria">Zona Segura de Alexandria</option>
+                    <option value="West Georgia">West Georgia Correctional Facility</option>
+                    <option value="Oceanside">Oceanside</option>
+                    <option value="Reino">O Reino</option>
+                </select>
+            </div>
+            <div class="botao">
+                <div class="voltar">
+                    <input type="reset" name="voltar" id="voltar"></input> 
+                </div> 
+                <div class="enviar"> 
+                <input type="submit" name="enviar" id="enviar"></input>     
+                </div>
+            </div>
+        </form>
+     </div>
+</body>
+</html>

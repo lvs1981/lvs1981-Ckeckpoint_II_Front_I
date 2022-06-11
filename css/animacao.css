@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    animation: aparece-formulario .5s ease-in ;
+}
+h2{
+    animation: aparece-formulario 2s ease-in ;
+}
+.nome{
+    animation: aparece-formulario 2.1s ease-in ;
+}
+.endereco{
+    animation: aparece-formulario 2.2s ease-in ;
+}
+.complemento{
+    animation: aparece-formulario 2.3s ease-in ;
+}
+.telefone{
+    animation: aparece-formulario 2.4s ease-in ;
+}
+.email{
+    animation: aparece-formulario 2.5s ease-in ;
+}
+.sexo{
+    animation: aparece-formulario 2.6s ease-in ;
+}
+.nascimento{
+    animation: aparece-formulario 2.7s ease-in ;
+}
+.idade{
+    animation: aparece-formulario 2.8s ease-in ;
+}
+.melhor-temporada{
+    animation: aparece-formulario 2.9s ease-in ;
+}
+.cidTwd{
+    animation: aparece-formulario 3.0s ease-in ;
+}
+.enviar{
+    animation: aparece-formulario 3.1s ease-in ;
+}
+.voltar{
+    animation: aparece-formulario 3.2s ease-in ;
+}
+
+@keyframes aparece-formulario{
+    0%{
+    transform: translate(-900px)
+    }
+    120%{
+        transform: translate(0px)
+    }
+}
